@@ -378,7 +378,7 @@ footer {
 
 .btn-footer {
   font-size: 20px;
-  margin-top: 15px;
+  margin-top: 0;
   transition: all 0.3s ease-in-out;
   color: #fff;
   border: solid 2px #212529;
@@ -467,11 +467,11 @@ footer {
     background-color: white; }
 
 .btn-social {
-  font-size: 20px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 55px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   border: 2px solid white;
   border-radius: 100%; }
