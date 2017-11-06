@@ -485,3 +485,57 @@ footer {
 .btn:active,
 .btn:focus {
   outline: none; }
+
+.portfolio-modal .modal-dialog .modal-content .container .row .mx-auto .modal-body p {
+  margin-top: 1rem;
+}
+
+.address {
+  margin-top: 45px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+
+/* Larger than 700 px (Tablet/Desktop) */
+
+@media only screen and (min-width: 700px){
+  .portfolio-modal .modal-dialog .modal-content{
+    padding-top: 0px;
+  }
+}
+
+/* Tablet sizes */
+
+@media only screen and (min-width: 500px) and (max-width: 769px){
+  .portfolio-modal .close-modal .lr {
+    height: 35px;
+  }
+
+  .portfolio-modal .close-modal .lr .rl {
+    height: 35px;
+  }
+
+  .portfolio-modal .modal-dialog .modal-content{
+    padding-top: 32px;
+  }
+}
+
+/* Smartphone Sizes */
+
+@media only screen and (max-width: 499px){
+  .portfolio-modal .close-modal .lr {
+    height: 25px;
+  }
+
+  .portfolio-modal .close-modal .lr .rl {
+    height: 25px;
+  }
+
+  .portfolio-modal .modal-dialog .modal-content{
+    padding-top: 25px;
+  }
+}
