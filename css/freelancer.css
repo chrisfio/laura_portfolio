@@ -229,6 +229,9 @@ header.masthead {
     color: #18BC9C; }
   #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px; }
+  #portfolio .portfolio-item .portfolio-link .caption .caption-content p {
+    margin-top: -50px;
+  }
   #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
   #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0; }
@@ -280,7 +283,8 @@ header.masthead {
   width: 75px;
   height: 75px;
   cursor: pointer;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 1000; }
   .portfolio-modal .close-modal:hover {
     opacity: 0.3; }
   .portfolio-modal .close-modal .lr {
@@ -498,11 +502,15 @@ footer {
   font-weight: bold;
 }
 
+.portfolio-title-box {
+  font-size: 22px
+}
+
 /* Responsive Styling */
 
 /* Larger than 700 px (Tablet/Desktop) */
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 768px){
   .portfolio-modal .modal-dialog .modal-content{
     padding-top: 0px;
   }
@@ -538,4 +546,9 @@ footer {
   .portfolio-modal .modal-dialog .modal-content{
     padding-top: 25px;
   }
+}
+
+@media only screen and (max-width: 499px){
+  .correspondence-title {
+    font-size: 2em !important}
 }
