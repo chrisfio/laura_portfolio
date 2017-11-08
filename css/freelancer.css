@@ -506,6 +506,13 @@ footer {
   font-size: 22px
 }
 
+.about-me-body {
+  text-align: center;
+}
+
+.img-width {
+  width: 100%;
+}
 /* Responsive Styling */
 
 /* Larger than 700 px (Tablet/Desktop) */
