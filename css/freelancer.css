@@ -513,15 +513,54 @@ footer {
 .img-width {
   width: 100%;
 }
+
+.carousel-inner {
+  border-color: #2c3e50;
+  border-style: solid;
+  border-width: 7px;
+}
+
+.carousel-inner .carousel-item {
+  height: 550px;
+  background: #2c3e50;
+}
+
+.carousel-inner .carousel-item .carousel-caption{
+  position: relative;
+  height: auto;
+  right: auto;
+  left: auto;
+  bottom: 0px;
+  color: #fff;
+  background: #2c3e50;
+  padding-top: 15px;
+  padding-bottom: 1px;
+
+}
+
+.row .carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10px;
+}
 /* Responsive Styling */
 
-/* Larger than 700 px (Tablet/Desktop) */
+/* Large Desktop */
+@media only screen and (min-width: 995px) and (max-width: 1199px) {
+  .carousel-inner .carousel-item {
+    height: 510px;
+  }
+}
+
+/* Larger than 768 px (Tablet/Desktop) */
 
 @media only screen and (min-width: 768px){
   .portfolio-modal .modal-dialog .modal-content{
     padding-top: 0px;
   }
 }
+
 
 /* Tablet sizes */
 
@@ -539,6 +578,11 @@ footer {
   }
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px){
+  .carousel-inner .carousel-item {
+    height: 480px;
+  }  
+}
 /* Smartphone Sizes */
 
 @media only screen and (max-width: 499px){
@@ -553,9 +597,18 @@ footer {
   .portfolio-modal .modal-dialog .modal-content{
     padding-top: 25px;
   }
+
+  .carousel-inner .carousel-item {
+    height: 450px;
+  } 
+
+  .correspondence-title {
+    font-size: 2em !important
+  }
 }
 
-@media only screen and (max-width: 499px){
-  .correspondence-title {
-    font-size: 2em !important}
+@media only screen and (max-width: 375px){
+  .carousel-inner .carousel-item {
+    height: 480px;
+  }
 }
